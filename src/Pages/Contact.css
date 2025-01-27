@@ -1,0 +1,125 @@
+/* General Page Styles */
+.contact-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: #f9f9f9;
+  padding: 20px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 20px; /* Add space between the image and form */
+}
+
+/* Image Section */
+.form-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 300px; /* Ensure a minimum width for the image */
+  margin-bottom: 20px;
+}
+
+/* Form Content */
+.form-content {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex: 2; /* Allow the form to grow */
+}
+
+.form-content h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #13280e;
+}
+
+.form-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add a subtle hover effect */
+.form-content input:hover,
+.form-content select:hover,
+.form-content textarea:hover {
+  border-color: #9ca3af; /* Slightly darker border on hover */
+}
+
+/* Style for the select dropdown */
+.form-content select {
+  appearance: none; /* Remove default arrow for custom styling */
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gray" width="24px" height="24px"><path d="M7 10l5 5 5-5H7z"></path></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 18px 18px;
+  padding-right: 40px; /* Space for the arrow */
+}
+
+.form-content textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #17350d;
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-content input:focus,
+.form-content select:focus,
+.form-content textarea:focus {
+  border-color: #0f6816;
+  outline: none;
+}
+
+/* Styling for textarea */
+textarea {
+  resize: none; /* Prevent resizing */
+  min-height: 100px; /* Ensure a minimum size */
+}
+
+/* Style for buttons */
+button {
+  background-color: #3b82f6; /* Primary color */
+  color: #ffffff; /* White text */
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #2563eb; /* Slightly darker on hover */
+}
+
+button:active {
+  background-color: #1d4ed8; /* Even darker when clicked */
+  transform: scale(0.98); /* Subtle shrink effect */
+}
+
+button:disabled {
+  background-color: #9ca3af; /* Disabled state color */
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Progress Tracker */
+p {
+  margin-top: 15px;
+  text-align: center;
+  color: #053009;
+  font-size: 0.9rem;
+}

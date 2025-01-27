@@ -1,0 +1,130 @@
+/* Footer Styling */
+.footer {
+  background-color: #257112; /* Dark background for footer */
+  color: #ffffff; /* White text color */
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Footer Header Section */
+.footer-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Footer Container */
+.footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between sections */
+  margin-top: 20px;
+}
+
+/* Location Content */
+.location-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Footer Details */
+.footer-details {
+  flex: 1;
+  max-width: 400px;
+}
+
+.venue-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.event-dates,
+.event-address,
+.phone-number {
+  margin-bottom: 10px;
+}
+
+.event-dates span,
+.event-address span,
+.phone-number span {
+  margin-right: 10px;
+}
+
+/* Map Section */
+.map-section {
+  flex: 1;
+  max-width: 500px;
+}
+
+.gmap-frame iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-details {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .map-section {
+    max-width: 100%;
+  }
+
+  .gmap-frame iframe {
+    height: 250px;
+  }
+}
+
+/* Contact Us Section */
+.footer-contact {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-contact h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.footer-contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-contact li {
+  margin-bottom: 10px;
+}
+
+.footer-contact a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}

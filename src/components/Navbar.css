@@ -1,0 +1,54 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #28a745; /* Green background */
+  color: white; /* Text color */
+}
+
+/* Navbar Content Wrapper */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Logo Section */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white; /* Logo text color */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-image {
+  height: 40px; /* Adjust image height */
+  margin-right: 0.5rem; /* Space between image and text */
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: flex;
+  gap: 1rem; /* Spacing between links */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white; /* Link color */
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #d4edda; /* Lighter green on hover */
+}

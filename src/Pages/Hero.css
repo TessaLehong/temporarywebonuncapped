@@ -1,0 +1,323 @@
+/* General container styling */
+.main-container {
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+.slide {
+  position: relative; /* Make the slide container relative */
+  width: 100%;
+  height: 100vh; /* Full-screen height */
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Place the image below other elements */
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 2; /* Place above the image */
+}
+
+.content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 3; /* Place above the overlay */
+  color: white;
+  padding: 20px;
+}
+
+.content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.content button {
+  background-color: #fbbf24; /* Yellow button */
+  color: black;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.text-green {
+  color: #034e0f;
+}
+
+.content button:hover {
+  background-color: #d97706; /* Darker yellow on hover */
+}
+/* Home Page Section */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+/* Center dots at the bottom of the slider */
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li button:before {
+  color: white; /* Change dot color */
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #4f46e5; /* Change active dot color to blue */
+}
+
+/* Style and position arrow buttons */
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  color: white;
+}
+
+.slick-prev {
+  left: 10px; /* Adjust left arrow position */
+}
+
+.slick-next {
+  right: 10px; /* Adjust right arrow position */
+}
+
+.cta {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .tablet-frame {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .services .service {
+    flex: 1 1 100%;
+  }
+
+  .cta {
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+.about-us-section {
+  background-color: #f9fafb;
+  padding: 2rem;
+  min-height: 80vh; /* Use min-height instead of height */
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Change to row if you want side-by-side */
+  gap: 2rem; /* Adds space between items */
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-us-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #034e0f;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  border-bottom: 2px solid #0077cc;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.about-us-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.about-us-section ul {
+  list-style-type: disc;
+  margin-left: 40px;
+  color: #034e0f;
+  font-size: 1.1rem;
+}
+
+.about-us-section ul li {
+  margin-bottom: 10px;
+}
+
+.why-choose-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Center vertically */
+  align-items: center;      /* Center horizontally */
+  text-align: center;       /* Center text */
+  height: 40vh;            /* Full viewport height */
+}
+
+.why-choose-us h2 {
+  margin-bottom: 20px;  /* Space between heading and list */
+}
+
+.why-choose-us ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.why-choose-us li {
+  margin: 10px 0;  /* Space between list items */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-us-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #034e0f;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.why-choose-us,
+.our-mission {
+  text-align: left;
+}
+
+.why-choose-us ul {
+  list-style: none; /* Optional: Customize bullet points */
+  padding-left: 0;
+}
+
+.about-us-section h1,
+.about-us-section p {
+  margin-bottom: 1.5rem;
+}
+
+.container > div {
+  padding: 1rem;
+}
+
+/* Form Container */
+.form-container {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Subtle white shadow */
+}
+
+/* Heading */
+form h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* Input Field Styling */
+form input {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-size: 1rem;
+  color: white; /* White text */
+  background-color: #222; /* Dark grey background */
+  border: 1px solid #555; /* Light grey border */
+  border-radius: 5px;
+  text-align: center; /* Center-align text and placeholder */
+  outline: none; /* Remove default outline */
+  transition: all 0.3s ease;
+}
+
+form input::placeholder {
+  color: #888; /* Light grey placeholder text */
+}
+
+form input:focus {
+  border-color: #00d4ff; /* Bright blue border on focus */
+}
+
+/* Button Styling */
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: grey; /* Grey button */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: white; /* White background on hover */
+  color: black; /* Black text on hover */
+}
+
+@keyframes moveClouds {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.cloud {
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  width: 200px;
+  opacity: 0.8;
+  animation: moveClouds 20s linear infinite;
+}
