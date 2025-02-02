@@ -22,6 +22,11 @@
   align-items: center;
 }
 
+.logo-image {
+  width: 120px; /* Adjust width to increase size */
+  height: auto; /* Maintain aspect ratio */
+}
+
 .logo-link {
   display: flex;
   align-items: center;
@@ -49,6 +54,6 @@
   transition: color 0.3s;
 }
 
-.nav-link:hover {
-  color: #d4edda; /* Lighter green on hover */
+.navbar-links .nav-link:hover {
+  color: #0a641f !important; /* Force the color */
 }

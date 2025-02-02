@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import logoImage from  '../assets/images/logoImage.jpg' // Update the path to your logo image
+import logoImage from  '../assets/images/logoImage.png' // Update the path to your logo image
 
 function Navbar() {
   return (
@@ -15,7 +15,7 @@ function Navbar() {
               alt="OnUncapped Logo" 
               className="logo-image" 
             />
-            OnUncapped
+            Onuncapped
           </Link>
         </div>
 

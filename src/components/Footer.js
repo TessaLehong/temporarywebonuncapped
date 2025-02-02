@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
             <div className="phone-number">
               <span role="img" aria-label="phone">📞</span> +27 87 150 4628 <br />
-              <small>Phone Number</small>
+             
             </div>
           </div>
 
